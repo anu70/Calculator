@@ -49,7 +49,11 @@ public class MainActivity extends ActionBarActivity {
             }
             else if(string.contains("=")){
                 double cal=0;
-               if(arrayList.size()>1) {
+                if(arrayList.size()==3 &&(arrayList.get(2).contains("+")||arrayList.get(2).contains("-")||arrayList.get(2).contains("*")||arrayList.get(2).contains("/"))){
+                    arrayList.remove(2);
+                    arrayList.remove(1);
+                }
+               else if(arrayList.size()>1) {
                    if (arrayList.get(1).contains("+")) {
                        cal = Double.parseDouble(arrayList.get(0)) + Double.parseDouble(arrayList.get(2));
                    } else if (arrayList.get(1).contains("-")) {
@@ -66,7 +70,9 @@ public class MainActivity extends ActionBarActivity {
                 else{
 
                }
+                string1="";
                 textView2.setText(arrayList.get(0));
+
 
             }
             else if(string.contains("C")){
