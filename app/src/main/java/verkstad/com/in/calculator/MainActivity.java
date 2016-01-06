@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class MainActivity extends ActionBarActivity {
     String string = "";
     String string1="";
-    TextView textView ;
+   // TextView textView ;
     TextView textView2;
     ArrayList<String> arrayList = new ArrayList<String>();
 
@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
         public void onClick (View v){
-            textView= (TextView) findViewById(R.id.textView);
+            //textView= (TextView) findViewById(R.id.textView);
             textView2= (TextView) findViewById(R.id.textView2);
 
             Button button = (Button) v;
@@ -116,7 +116,7 @@ public class MainActivity extends ActionBarActivity {
             }
 
 
-            textView.setText(arrayList.toString());
+            //textView.setText(arrayList.toString());
 
         }
 
